@@ -158,15 +158,35 @@ body {
   }
 }
 
-.navigation__burger {
+.menu__button {
   display: block;
   border: none;
   background: none;
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
-  .navigation__burger {
+  .menu__button {
     display: none;
   }
+}
+
+.menu__button .icon-cross {
+  display: block;
+}
+
+.menu__button.is-open.icon-menu {
+  display: none;
+}
+
+.menu__button.is-open.icon-cross {
+  display: none;
+}
+
+.menu-conteiner {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
 .logo {
@@ -278,6 +298,7 @@ body {
   background-position: center;
   background-size: cover;
   background-color: #C4C4C4;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
