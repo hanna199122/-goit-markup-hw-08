@@ -188,6 +188,9 @@ body {
   left: 0;
   width: 100%;
 }
+.menu-conteiner.is-open {
+  display: block;
+}
 
 .logo {
   color: var(--accent-color);
