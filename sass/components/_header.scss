@@ -18,26 +18,24 @@
 
 .burger {
     display: block;
-    border: none;
-    background: none;
 
     @media screen and (min-width: 768px) {
     display: none;
     }
 }
 
-// .burger .burger__icon-cross {
-//     display: block;
-// }
+.burger .burger__icon-cross {
+    display: block;
+}
 
 
-// .menu__button.is-open.burger__icon-menu {
-//     display: none;
-// }
+.menu__button.is-open.burger__icon-menu {
+    display: none;
+}
 
-// .burger.is-open.burger__icon-cross {
-//     display: none;
-// }
+.burger.is-open.burger__icon-cross {
+    display: none;
+}
 
 // .menu-conteiner {
 //     display: none;
@@ -142,7 +140,7 @@
     @media screen and (min-width: 768px) {
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.14;
         letter-spacing: 0.02em;
 
@@ -152,8 +150,9 @@
     }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
         flex-direction: row;
+        align-items: center;
+        font-size: 14px;
     }
 }
 
@@ -164,7 +163,9 @@
 }
 
 .connection-list__item:not(:last-child)  {
+    @media screen and (min-width: 768px) {
     margin-bottom: 10px;
+    }
 
     @media screen and (min-width: 1200px) {
     margin-bottom: 0;
