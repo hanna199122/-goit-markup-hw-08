@@ -1,47 +1,78 @@
 .portfolio {
     background: var(--primary-header-color);
-    padding: 94px 0px;
+    padding: 60px 15px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0; 
+    }
 }
 
 
 .priorities-list  {
+    display: block;
+   
+
+    @media screen and (min-width: 768px) {
     display: flex;
-    
-}
-.priorities-list__item:not(:last-child) {
-    margin-right: 30px;
+    flex-wrap: wrap;
+    margin: -15px;
+    }    
+
+    @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    }  
 }
 
-.priorities-list__item:last-child  {
-    margin-right: auto;
+.priorities-list__item  {
+   flex-basis: 100%;
+
+    @media screen and (min-width: 768px) {
+        margin: 15px;   
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin: 15px;
+        flex-basis: calc((100% - 8 * 15px) / 2)
+    }
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        }
+    }
 }
 
 .priorities-list__pre-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase;
+    text-align: center;
     color: var(--secondary-header-color);
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
 }
 
 .priorities-list__box {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     background-color: var(--background-second);
     height: 120px;
-    padding-top: 25px;
-    padding-left: 102px;
-    padding-right: 102px;
-    padding-bottom: 25px;
     border-radius: 4px;
+    
+    &__txt {
+        line-height: 1.7;
+        color: var(--main-text-color);
+        display: block;
+    }
+    
 }
 
-.priorities-list__txt {
-    line-height: 1.7;
-    color: var(--main-text-color);
-    max-width: 270px;
-}
 
 
 
