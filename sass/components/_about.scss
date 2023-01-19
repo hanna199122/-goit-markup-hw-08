@@ -1,9 +1,13 @@
 
 
 .about {
-    background: var(--primary-header-color);
-    padding: 0px 0px 94px;
-   
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        background: var(--primary-header-color);
+        padding: 0px 0px 94px; 
+    }
 }
 
 .decisions-list {
