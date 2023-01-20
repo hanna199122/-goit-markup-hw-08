@@ -36,7 +36,6 @@
     }
 }
 
-
 .portfolio-button {
     display:flex;
     align-items: center;
@@ -65,7 +64,7 @@
 }
 
 .portfolio-button-1  {
-    padding: 6px 25px;
+    padding: 6px 32px;
 }
 
 .conteiner-description-2  {
@@ -145,6 +144,15 @@
     overflow: auto;
 }
 
+.name2 {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+
 
 // .conteiner >.resume-list > .resume-item {
 //     flex-basis: calc(100% / 3 - 60px);
@@ -168,10 +176,3 @@
 // }
 
 
-.name2 {
-    margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
