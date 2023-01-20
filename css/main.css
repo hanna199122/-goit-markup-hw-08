@@ -1109,6 +1109,11 @@ address ul li:not(:last-child) {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 @media screen and (min-width: 768px) {
   .portfolio-list-2 {
@@ -1117,16 +1122,7 @@ address ul li:not(:last-child) {
             justify-content: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-}
-
-.portfolio-list-2__button:not(:last-child) {
-  margin-right: 8px;
-  margin-bottom: 15px;
-}
-@media screen and (min-width: 1200px) {
-  .portfolio-list-2__button {
-    margin-bottom: 30px;
+    row-gap: 0;
   }
 }
 
@@ -1143,7 +1139,6 @@ address ul li:not(:last-child) {
   line-height: 1.63;
   padding: 6px 22px;
   background-color: var(--background-second);
-  margin-right: 8px;
   letter-spacing: 0.03em;
   margin: 0px;
 }
@@ -1165,10 +1160,6 @@ address ul li:not(:last-child) {
 
 .portfolio-button-1 {
   padding: 6px 25px;
-}
-
-.buttons li:not(:last-child) {
-  margin-right: 8px;
 }
 
 .conteiner-description-2 {
@@ -1200,6 +1191,11 @@ address ul li:not(:last-child) {
 .resume-item:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 479px) {
+  .resume-item {
+    min-width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .resume-item {
     margin: 15px;
@@ -1217,6 +1213,16 @@ address ul li:not(:last-child) {
 
 .icon-resume {
   width: 100%;
+}
+
+.resume-item:hover .resume-cover-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.resume-item:focus .resume-cover-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .resume-item:focus,
