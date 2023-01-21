@@ -56,13 +56,12 @@
 
 .card-hover {
     display: block;
-    }
-    
-.card-hover:hover,
-.card-hover:focus {
+    &:hover,
+    &:focus {
     box-shadow: var(--portfolio-cardshadow);
+    }
 }
-
+    
 .portfolio-button-1  {
     padding: 6px 32px;
 }
