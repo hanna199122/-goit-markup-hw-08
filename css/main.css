@@ -551,14 +551,12 @@ body {
 }
 
 .portfolio {
-  visibility: hidden;
   background: var(--primary-header-color);
   padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
     padding: 94px 0;
-    visibility: initial;
   }
 }
 
