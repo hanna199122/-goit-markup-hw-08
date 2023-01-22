@@ -9,10 +9,12 @@
 
     overflow-y: scroll;
 }
-   
-
 
 .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 450px;
     max-height: 100%;
     border-radius: 4px;
@@ -30,7 +32,6 @@
         transition: transform 350ms ease-in-out;
         width: 528px;
         min-height: 581px;
-
     }
 }
 
@@ -77,16 +78,18 @@
 
 .modal-wrap {
     color:var(--main-text-color);
-}
 
-.modal-wrap__text  {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    color: var(--secondary-header-color);
-    margin-bottom: 12px;
+    &__text  {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        color: var(--secondary-header-color);
+        margin-bottom: 12px;
+    }
 }
+ 
+
 
 .modal-input-group__label,
 .modal-textarea-group__label {
@@ -100,8 +103,8 @@
     position:relative;
     display: block;
     margin-bottom: 10px;
-}
-.modal-input-group__input {
+
+    &__input {
     width: 100%;
     height: 40px;
     padding-left: 36px; 
@@ -112,15 +115,16 @@
     line-height: 1.16;
     outline: none;
     
-
-    &:focus,
-    &:hover {
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}  
+        &:focus,
+        &:hover {
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }  
+    }
 }
+
 
 .modal-input-group__input:focus + svg,
 .modal-input-group__input:hover + svg  {
@@ -152,11 +156,11 @@
 
     &:focus,
     &:hover  {
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}  
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }  
 }
 
 .checkbox {
@@ -168,9 +172,8 @@
     @media screen and (min-width: 1200px) {
         margin-bottom: 30px;
     }
-}
 
-.checkbox__label {
+    &__label {
 
     font-size: 12px;
     line-height: 1.16;
@@ -178,16 +181,16 @@
     align-items: center;
     font-weight: 400;
     
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: 1.71; 
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71; 
+        }
     }
-    
-}
+   
 
-.checkbox__body {
-   appearance: none;
-
+    &__body {
+    appearance: none; 
+    }
 }
 
 .checkbox__icon {
