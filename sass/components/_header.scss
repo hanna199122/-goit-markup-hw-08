@@ -1,20 +1,29 @@
 .header  {
     position: relative;
+    border-bottom: 1px solid #ECECEC;   
+    display: none;  
 
-    border-bottom: 1px solid #ECECEC;     
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
 .wrapper-header {
-    display: flex;
-    align-items: center;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
+    
 
     @media screen and (min-width: 768px) {
         margin-right: auto;
+
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -42,9 +51,6 @@
     display: none;
 }
 
-.burger.is-open .logo {
-    display: none;
-}
 
 .menu-conteiner {
    
@@ -57,7 +63,7 @@
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
-        top: 100%;
+        top: 0%;
         left: 0;
         width: 100%;
 
@@ -78,8 +84,6 @@
 }
 
 .logo {
-    // display: none;
-
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -87,7 +91,7 @@
     text-decoration: none;
     display: block;
 
-   &__header {
+    &__header {
     margin-right: 276px;  
 
     @media screen and (min-width: 768px) {
@@ -122,9 +126,11 @@
         margin-right: 300px;
     }
 
+
     &__item {
         position: relative;
     }
+
 
     &__item:not(:last-child) {
 
@@ -164,6 +170,7 @@
         } 
     }
 } 
+
 
 .link-active  {
 
@@ -216,6 +223,7 @@
         align-items: center;
     }
 
+
     &_item {
         @media screen and (min-width: 1200px) {
             display: flex;
@@ -248,7 +256,8 @@
     height: 12px;
 }
 
-.connection-list__link:hover .connection-list__email {
+.connection-list__link:hover .connection-list__email,
+.connection-list__link:hover .connection-list__mobile {
     fill: var(--accent-color);
 }
 
@@ -257,10 +266,6 @@
     margin-right: 10px;
     width: 10px;
     height: 16px;
-}
-
-.connection-list__link:hover .connection-list__mobile {
-    fill: var(--accent-color);
 }
 
 .connection-list__link {
@@ -293,10 +298,12 @@
         margin-right: 10px;
 
     }
+
     &__link:hover,
     &__link:focus  {
         color: var(--hover-color);
     }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
