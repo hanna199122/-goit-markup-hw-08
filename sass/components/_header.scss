@@ -1,7 +1,6 @@
 .header  {
     position: relative;
-    border-bottom: 1px solid #ECECEC;   
-    display: none;  
+    border-bottom: 1px solid #ECECEC;    
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -9,6 +8,7 @@
 }
 
 .wrapper-header {
+    display: flex;
     
     @media screen and (min-width: 768px) {
         display: flex;
@@ -17,8 +17,6 @@
 }
 
 .navigation {
-    
-
     @media screen and (min-width: 768px) {
         margin-right: auto;
 
@@ -38,6 +36,19 @@
     display: none;
     }
 }
+
+.icon-close  {
+    right: 1%;
+    top: 1%;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+    
 
 .burger .icon-cross {
     display: none;
@@ -92,14 +103,14 @@
     display: block;
 
     &__header {
-    margin-right: 276px;  
+        margin-right: 276px;  
 
-    @media screen and (min-width: 768px) {
-        margin-right: 88px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-right: 93px;
-    }
+        @media screen and (min-width: 768px) {
+            margin-right: 88px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
     }
 }
 
@@ -290,7 +301,6 @@
         color: var(--accent-color);
 
         display: flex;
-        justify-content: center;
         align-items: flex-start;
     }
 
