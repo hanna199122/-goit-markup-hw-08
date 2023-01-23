@@ -543,7 +543,7 @@ body {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/desktop@2x.jpg);
-    width: 1600px;
+    width: 1200px;
     height: 600px;
     padding: 200px 0;
   }
@@ -552,8 +552,7 @@ body {
 .idia {
   text-align: center;
 }
-
-.hero__title {
+.idia-hero__title {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
@@ -563,14 +562,9 @@ body {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
-  .hero__title {
-    font-weight: 900;
+  .idia-hero__title {
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--primary-header-color);
-    margin-bottom: 40px;
   }
 }
 
