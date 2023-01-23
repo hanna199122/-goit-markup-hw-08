@@ -2,15 +2,33 @@
     text-align: center;
     margin: 0 auto;
     max-width: 1600px;
-    
-
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #C4C4C4;
 
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),(min-resolution: 2dppx)  {
+        background-image: url(../images/mobile@2x.jpg);
+        width: 480px;
+        height: 400px;
+        padding: 118px 0;
+    } 
+
+    @media screen and (min-width: 768px) {
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),(min-resolution: 2dppx)  {
+        background-image: url(../images/tablet@2x.jpg);
+        width: 768px;
+        } 
+    }
+    
     @media screen and (min-width: 1200px) {
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),(min-resolution: 2dppx)  {
+        background-image: url(../images/desktop@2x.jpg);
+        width: 1200px;
+        height: 600px;
+        padding: 200px 0;
+        } 
     }
 }   
 
