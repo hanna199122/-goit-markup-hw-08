@@ -17,11 +17,14 @@
 }
 
 .navigation {
+    margin-right: auto;
+
     @media screen and (min-width: 768px) {
-        margin-right: auto;
+        // margin-right: auto;
 
         display: flex;
         align-items: center;
+        
     }
 }
 
@@ -111,7 +114,6 @@
     display: block;
 
     &__header {
-        margin-right: 276px;  
 
         @media screen and (min-width: 768px) {
             margin-right: 88px;

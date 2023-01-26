@@ -169,9 +169,11 @@ body {
   }
 }
 
+.navigation {
+  margin-right: auto;
+}
 @media screen and (min-width: 768px) {
   .navigation {
-    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -265,9 +267,6 @@ body {
   font-size: 26px;
   text-decoration: none;
   display: block;
-}
-.logo__header {
-  margin-right: 276px;
 }
 @media screen and (min-width: 768px) {
   .logo__header {
@@ -526,13 +525,12 @@ body {
   background-position: center;
   background-size: cover;
   background-color: #C4C4C4;
+  padding: 118px 0;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/mobile@2x.jpg);
-    width: 480px;
     height: 400px;
-    padding: 118px 0;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -541,12 +539,16 @@ body {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/desktop@2x.jpg);
     width: 1200px;
     height: 600px;
-    padding: 200px 0;
   }
 }
 
